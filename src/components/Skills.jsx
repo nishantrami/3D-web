@@ -89,7 +89,7 @@ const Skills = () => {
                                 <span className="skill-percent">0%</span>
                             </div>
                             <div className="skill-bar">
-                                <div className="skill-progress python-bar" data-width="90%" style={{ width: '0' }}></div>
+                                <div className="skill-progress python-bar" data-width="50%" style={{ width: '0' }}></div>
                             </div>
                         </div>
                         <div className="skill-item">
@@ -140,7 +140,7 @@ const Skills = () => {
                                 <span className="skill-percent">0%</span>
                             </div>
                             <div className="skill-bar">
-                                <div className="skill-progress git-bar" data-width="90%" style={{ width: '0' }}></div>
+                                <div className="skill-progress git-bar" data-width="50%" style={{ width: '0' }}></div>
                             </div>
                         </div>
                     </div>
