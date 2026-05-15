@@ -50,9 +50,15 @@ const Hero = () => {
                     <div className="typing-container reveal">
                         <span className="typed-text">{typedText}</span><span className="cursor">&nbsp;</span>
                     </div>
-                    <div className="hero-btns reveal">
+                    <div className="hero-btns reveal" style={{ flexWrap: 'wrap' }}>
                         <a href="#projects" className="btn btn-primary">View Projects</a>
                         <a href="#contact" className="btn btn-secondary">Hire Me</a>
+                        <a href="/NishantRami_CV.pdf" download className="btn btn-secondary">
+                            <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
+                        </a>
+                        <a href="/NishantRami_CV.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
+                            <i className="fas fa-eye" style={{ marginRight: '8px' }}></i> Show CV
+                        </a>
                     </div>
                 </div>
 
