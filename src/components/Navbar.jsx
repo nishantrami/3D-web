@@ -36,6 +36,17 @@ const Navbar = () => {
                 <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')}>Skills</a></li>
                 <li><a href="#projects" onClick={(e) => handleNavClick(e, '#projects')}>Projects</a></li>
                 <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')}>Services</a></li>
+                <li className="nav-dropdown">
+                    <span className="dropdown-trigger">CV <i className="fas fa-chevron-down"></i></span>
+                    <div className="dropdown-menu">
+                        <a href="/NishantRami_CV.pdf" target="_blank" rel="noreferrer">
+                            <i className="fas fa-eye"></i> Show CV
+                        </a>
+                        <a href="/NishantRami_CV.pdf" download>
+                            <i className="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </li>
                 <li><a href="#contact" className="cta-nav" onClick={(e) => handleNavClick(e, '#contact')}>Hire Me</a></li>
             </ul>
         </nav>

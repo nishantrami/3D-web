@@ -46,6 +46,7 @@ const Footer = () => {
                         <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}>About</a></li>
                         <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')}>Skills</a></li>
                         <li><a href="#projects" onClick={(e) => handleNavClick(e, '#projects')}>Projects</a></li>
+                        <li><a href="/NishantRami_CV.pdf" target="_blank" rel="noreferrer">View CV</a></li>
                         <li><a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a></li>
                     </ul>
                 </div>

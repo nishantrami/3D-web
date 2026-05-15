@@ -286,6 +286,89 @@ nav.scrolled {
     opacity: 1 !important;
 }
 
+/* Navbar Dropdown styling */
+.nav-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-trigger {
+    color: var(--text-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-trigger:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.dropdown-trigger i {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-trigger i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 8px;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 1001;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    pointer-events: none;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    text-decoration: none !important;
+    color: var(--text-white) !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px;
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    opacity: 0.9 !important;
+}
+
+.dropdown-menu a:hover {
+    background: var(--primary-glow) !important;
+    color: var(--primary) !important;
+    opacity: 1 !important;
+    transform: translateX(4px);
+}
+
 /* Sections General */
 section {
     padding: 100px 10% 60px;
