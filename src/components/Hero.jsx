@@ -60,11 +60,6 @@ const Hero = () => {
                     <CodeGame />
                 </div>
             </div>
-
-            <div className="scroll-down">
-                <span>Scroll Down</span>
-                <div className="mouse"></div>
-            </div>
         </section>
     );
 };
