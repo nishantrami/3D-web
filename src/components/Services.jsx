@@ -2,7 +2,7 @@ const Services = () => {
     return (
         <section className="services" id="services">
             <span className="section-tag reveal">What I Do</span>
-            <h2 className="section-title reveal">Services <span>Provided</span></h2>
+
 
             <div className="services-grid">
                 <div className="service-card reveal">

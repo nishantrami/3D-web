@@ -20,7 +20,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
 }
 
 html {
@@ -714,9 +713,8 @@ section {
 }
 
 .skill-category:hover {
-    transform: translateY(-10px) rotateX(2deg);
-    border-color: rgba(79, 70, 229, 0.25);
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06), 0 0 20px var(--primary-glow);
+    border-color: rgba(79, 70, 229, 0.3);
+    transform: scale(1.03);
 }
 
 .skill-category h3 {
@@ -819,6 +817,11 @@ section {
     box-shadow: 0 0 15px rgba(55, 118, 171, 0.4);
 }
 
+.react-bar {
+    background: linear-gradient(to right, #61dafb, #00d8ff);
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.4);
+}
+
 .cpp-bar {
     background: linear-gradient(to right, #00599c, #004482);
     box-shadow: 0 0 15px rgba(0, 89, 156, 0.4);
@@ -867,9 +870,12 @@ section {
     border: 1px solid var(--border-glass);
     overflow: hidden;
     transition: var(--transition);
-    transform-style: preserve-3d;
-    perspective: 1000px;
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
+}
+
+.project-card:hover {
+    border-color: rgba(79, 70, 229, 0.3);
+    transform: scale(1.03);
 }
 
 .project-img {
@@ -945,6 +951,10 @@ section {
     transition: var(--transition);
 }
 
+.project-links a i {
+    font-size: 1.1rem;
+}
+
 .project-links a:hover {
     color: var(--primary);
 }
@@ -967,10 +977,8 @@ section {
 }
 
 .service-card:hover {
-    background: rgba(79, 70, 229, 0.02);
-    border-color: rgba(79, 70, 229, 0.25);
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+    border-color: rgba(79, 70, 229, 0.3);
+    transform: scale(1.03);
 }
 
 .service-icon {

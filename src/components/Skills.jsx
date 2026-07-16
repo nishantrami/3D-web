@@ -40,7 +40,7 @@ const Skills = () => {
                 ease: "expo.out",
                 delay: 0.5,
                 onComplete: () => {
-                    const featuredClasses = ['js-bar', 'sql-bar', 'git-bar', 'python-bar', 'cpp-bar', 'html-bar'];
+                    const featuredClasses = ['js-bar', 'sql-bar', 'git-bar', 'python-bar', 'cpp-bar', 'html-bar', 'react-bar'];
                     if (featuredClasses.some(cls => bar.classList.contains(cls))) {
                         bar.classList.add('pulse');
                     }
@@ -89,7 +89,7 @@ const Skills = () => {
                                 <span className="skill-percent">0%</span>
                             </div>
                             <div className="skill-bar">
-                                <div className="skill-progress python-bar" data-width="50%" style={{ width: '0' }}></div>
+                                <div className="skill-progress python-bar" data-width="30%" style={{ width: '0' }}></div>
                             </div>
                         </div>
                         <div className="skill-item">
@@ -124,6 +124,15 @@ const Skills = () => {
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress js-bar" data-width="85%" style={{ width: '0' }}></div>
+                            </div>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-info">
+                                <span className="skill-name"><i className="fab fa-react" style={{ color: '#61dafb' }}></i> ReactJS</span>
+                                <span className="skill-percent">0%</span>
+                            </div>
+                            <div className="skill-bar">
+                                <div className="skill-progress react-bar" data-width="50%" style={{ width: '0' }}></div>
                             </div>
                         </div>
                     </div>
